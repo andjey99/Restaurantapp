@@ -34,7 +34,7 @@ Ein leistungsstarkes Backend mit Go und modernen Frontend-Technologien.
 
 
 
-## ✨ Features
+# ✨ Features
 - Modern. Practical. Optimized for every use case.
 
 - 🆓 Open Source & Freedom
@@ -85,8 +85,8 @@ Ein leistungsstarkes Backend mit Go und modernen Frontend-Technologien.
 - [x] **VPN-Verbindung** zur Hochschule Flensburg (IP: `vpn.hs-flensburg.de`)  
 - [x] Hochschul-Login (Benutzername + Passwort)  
             <div align ="right">                                                      [↑Back to Top](#top) </div>
-## 🚀 Installation  
-### 1. Datenbank einrichten  
+# 🚀 Installation  
+## 1. Datenbank einrichten  
 1. Verbinde dich in SSMS mit:  
    - **Server name**: `goliath.wi.fh-flensburg.de`  
    - **Authentication**: `SQL Server Authentication`  
@@ -175,5 +175,9 @@ VALUES
 ('2', 'Caesar Salad', 'Frischer Römersalat mit Caesar-Dressing', 8.99, 'Vorspeise', 1),
 ('3', 'Tiramisu', 'Italienische Kaffee-Nachspeise', 6.99, 'Dessert', 1);  
 ```
-
+<div align ="right">[↑Back to Top](#top) </div>
+## 2. Configure Database Connection 🔧
+To allow the app to access your database, update the connection string in the app.config file:
+1. Open app.config in the project folder.
+- ** 
 
