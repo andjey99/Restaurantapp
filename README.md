@@ -225,4 +225,12 @@ To allow the app to access your database, update the connection string in the ap
 ## 5. Where can I get support?
 E- Mail us at: restaurantapp@nichtverfügbar.de
 
+#📜 License Information
+This project is licensed under the **MIT License.**
 
+What does this mean?
+- You are free to use, modify, and distribute the code for personal or commercial purposes.
+- Attribution is required (include the original license in your project).
+- The authors are not liable for any damages caused by the use of this software.
+
+For the complete license text, see [LICENSE](LICENSE)
