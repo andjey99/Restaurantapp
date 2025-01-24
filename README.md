@@ -32,7 +32,7 @@ A powerful backend with Go and modern frontend technologies.
 </div>
 
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDA3OWRjYzY1NzY5ODA4YjQwZDhkYjRkY2EwYzQyYzFmZDBiMDA3YiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/fwpE4Y7bsJpQgKwofy/giphy.gif" width="500">
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDA3OWRjYzY1NzY5ODA4YjQwZDhkYjRkY2EwYzQyYzFmZDBiMDA3YiZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/fwpE4Y7bsJpQgKwofy/giphy.gif" width="1000">
 
 # ✨ Features
 - Modern. Practical. Optimized for every use case.
