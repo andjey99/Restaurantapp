@@ -3,8 +3,8 @@
 
 # 🍽️ Restaurant Management System  
 
-**Modernes Restaurant-Management-System**  
-Ein leistungsstarkes Backend mit Go und modernen Frontend-Technologien.  
+**Modern Restaurant Management System**  
+A powerful backend with Go and modern frontend technologies.
 
 </div>
 
@@ -82,10 +82,10 @@ Ein leistungsstarkes Backend mit Go und modernen Frontend-Technologien.
 
  # 📋 Requirements
 - [x] **SQL Server Management Studio (SSMS)** ([Download](https://aka.ms/ssmsfullsetup))  
-- [x] **VPN-Verbindung** zur Hochschule Flensburg (IP: `vpn.hs-flensburg.de`)  
-- [x] Hochschul-Login (Benutzername + Passwort)  
+- [x] **VPN-Connection** to Hochschule Flensburg (IP: `vpn.hs-flensburg.de`)  
+- [x] University Login (Username  + Password)  
             <div align ="right">                                                      [↑Back to Top](#top) </div>
-# 🚀 Installation  
+# 🚀 Database installation  
 ## 1. Datenbank einrichten  
 1. Verbinde dich in SSMS mit:  
    - **Server name**: `goliath.wi.fh-flensburg.de`  
@@ -94,13 +94,13 @@ Ein leistungsstarkes Backend mit Go und modernen Frontend-Technologien.
 
 
 
-2. **Führe dieses SQL-Skript aus** (ersetze `DEIN_BENUTZERNAME`):  
+2. **Führe dieses SQL-Skript aus** (ersetze `Your_Username`):  
 ```sql
 -- Datenbank erstellen
-CREATE DATABASE RestaurantDB_DEIN_BENUTZERNAME;
+CREATE DATABASE RestaurantDB_Your_Username;
 GO
 
-USE RestaurantDB_DEIN_BENUTZERNAME;
+USE RestaurantDB_Your_Username;
 GO
 
 -- Tabellen anlegen
@@ -175,9 +175,54 @@ VALUES
 ('2', 'Caesar Salad', 'Frischer Römersalat mit Caesar-Dressing', 8.99, 'Vorspeise', 1),
 ('3', 'Tiramisu', 'Italienische Kaffee-Nachspeise', 6.99, 'Dessert', 1);  
 ```
+
 <div align ="right">[↑Back to Top](#top) </div>
-## 2. Configure Database Connection 🔧
+
+# Configure Database Connection 🔧
 To allow the app to access your database, update the connection string in the app.config file:
 1. Open app.config in the project folder.
-- ** 
+2. Locate the <connectionStrings> section:
+``` csharp
+<connectionStrings>
+  <add name="RestaurantDBConnectionString" 
+       connectionString="Server=goliath.wi.fh-flensburg.de;Database=RestaurantDB_LUPR7441;Trusted_Connection=True;" 
+       providerName="System.Data.SqlClient" />
+</connectionStrings>
+```
+3. Change the database name: Replace RestaurantDB_LUPR7441 with your own name, e.g., RestaurantDB_YOUR_USERNAME.
+4. Save the file and restart the app.
+
+
+
+
+
+
+# ❓ FAQ
+## 1. Why can't I connect to the database?
+- **Check VPN:** Ensure you're connected to the university VPN (vpn.hs-flensburg.de).
+- **Verify Credentials:** Double-check your SQL Server username and password.
+- **Database Name:** Make sure the database name in app.config matches the one in SSMS.
+
+## 2. How do I add new menu items?
+- Currently, menu items are added via SQL scripts. Use the following example:
+  ```
+  INSERT INTO MenuItems (ItemID, Name, Description, Price, Category, IsAvailable)VALUES ('4', 'Margherita Pizza', 'Classic Italian pizza', 10.99, 'Main Course', 1);
+  ```
+## 3. How do I prioritize an order?
+- In the **Waitstaff Dashboard:**
+```
+1. Select an order from the list.
+2. Click the "Prioritize Order" button.
+3. The order will be marked as "Prioritized" in the kitchen view.
+```
+## 4. How do I update the order status in the kitchen?
+- In the **Kitchen Dashboard:**
+```
+1. Select an order from the list.
+2. Click "Mark as Ready" when the order is complete.
+3. The order will move to the "Completed Orders" list.
+```
+## 5. Where can I get support?
+E- Mail us at: restaurantapp@nichtverfügbar.de
+
 
