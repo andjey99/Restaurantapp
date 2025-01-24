@@ -199,34 +199,35 @@ To allow the app to access your database, update the connection string in the ap
 
 
 # ❓ FAQ
-## 1. Why can't I connect to the database?
+### 1. Why can't I connect to the database?
 - **Check VPN:** Ensure you're connected to the university VPN (vpn.hs-flensburg.de).
 - **Verify Credentials:** Double-check your SQL Server username and password.
 - **Database Name:** Make sure the database name in app.config matches the one in SSMS.
 
-## 2. How do I add new menu items?
+### 2. How do I add new menu items?
 - Currently, menu items are added via SQL scripts. Use the following example:
   ```
   INSERT INTO MenuItems (ItemID, Name, Description, Price, Category, IsAvailable)VALUES ('4', 'Margherita Pizza', 'Classic Italian pizza', 10.99, 'Main Course', 1);
   ```
-## 3. How do I prioritize an order?
+### 3. How do I prioritize an order?
 - In the **Waitstaff Dashboard:**
 ```
 1. Select an order from the list.
 2. Click the "Prioritize Order" button.
 3. The order will be marked as "Prioritized" in the kitchen view.
 ```
-## 4. How do I update the order status in the kitchen?
+### 4. How do I update the order status in the kitchen?
 - In the **Kitchen Dashboard:**
 ```
 1. Select an order from the list.
 2. Click "Mark as Ready" when the order is complete.
 3. The order will move to the "Completed Orders" list.
 ```
-## 5. Where can I get support?
-E- Mail us at: restaurantapp@nichtverfügbar.de
+### 5. Where can I get support?
+- E- Mail us at: restaurantapp@nichtverfügbar.de
 
-# ⚠️ License Information
+
+# 📜 License Information 📜
 This project is licensed under the **MIT License.**
 
 What does this mean?
