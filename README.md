@@ -234,4 +234,4 @@ What does this mean?
 - The authors are not liable for any damages caused by the use of this software.
 
 For the complete license text, see [LICENSE](LICENSE)
-<div align ="right">[↑Back to Top](#top) </div>
+<div align ="right">                                                      [↑Back to Top](#top) </div>
