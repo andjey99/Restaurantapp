@@ -86,15 +86,15 @@ A powerful backend with Go and modern frontend technologies.
 - [x] University Login (Username  + Password)  
             <div align ="right">                                                      [↑Back to Top](#top) </div>
 # 🚀 Database installation  
-## 1. Datenbank einrichten  
-1. Verbinde dich in SSMS mit:  
+## 1. Datebase set up  
+1. Connect to the SSMS with:  
    - **Server name**: `goliath.wi.fh-flensburg.de`  
    - **Authentication**: `SQL Server Authentication`  
-   - **Login/Passwort**: Deine Hochschuldaten  
+   - **Login/Password**: Your university credential
 
 
 
-2. **Führe dieses SQL-Skript aus** (ersetze `Your_Username`):  
+2. **Execute the SQL-script ** (ersetze `Your_Username`):  
 ```sql
 -- Datenbank erstellen
 CREATE DATABASE RestaurantDB_Your_Username;
@@ -225,7 +225,7 @@ To allow the app to access your database, update the connection string in the ap
 ## 5. Where can I get support?
 E- Mail us at: restaurantapp@nichtverfügbar.de
 
-#📜 License Information
+# ⚠️ License Information
 This project is licensed under the **MIT License.**
 
 What does this mean?
@@ -234,3 +234,4 @@ What does this mean?
 - The authors are not liable for any damages caused by the use of this software.
 
 For the complete license text, see [LICENSE](LICENSE)
+<div align ="right">[↑Back to Top](#top) </div>
