@@ -1,6 +1,7 @@
-<div align="center">
 <a name="top"></a>
-## 🍽️ Restaurant Management System  
+<div align="center">
+
+# 🍽️ Restaurant Management System  
 
 **Modernes Restaurant-Management-System**  
 Ein leistungsstarkes Backend mit Go und modernen Frontend-Technologien.  
@@ -161,7 +162,7 @@ CREATE TABLE Tables (
 );
 GO
 
--- Beispieldaten hinzufügen
+-- Values hinzufügen
 INSERT INTO Users (UserID, Username, Password, Role, Name, IsActive)
 VALUES 
 ('1', 'waiter1', 'password', 'Waitstaff', 'John Doe', 1),
@@ -173,3 +174,6 @@ VALUES
 ('1', 'Spaghetti Bolognese', 'Klassische italienische Pasta', 12.99, 'Hauptgericht', 1),
 ('2', 'Caesar Salad', 'Frischer Römersalat mit Caesar-Dressing', 8.99, 'Vorspeise', 1),
 ('3', 'Tiramisu', 'Italienische Kaffee-Nachspeise', 6.99, 'Dessert', 1);  
+```
+
+
