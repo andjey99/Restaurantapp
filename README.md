@@ -176,7 +176,7 @@ VALUES
 ('3', 'Tiramisu', 'Italienische Kaffee-Nachspeise', 6.99, 'Dessert', 1);  
 ```
 
-<div align ="right">[↑Back to Top](#top) </div>
+<div align ="right">                                                      [↑Back to Top](#top) </div>
 
 # Configure Database Connection 🔧
 To allow the app to access your database, update the connection string in the app.config file:
@@ -234,4 +234,4 @@ What does this mean?
 - The authors are not liable for any damages caused by the use of this software.
 
 For the complete license text, see [LICENSE](LICENSE)
-<div align ="right">                                                      [↑Back to Top](#top) </div>
+    <div align ="right"> [↑Back to Top](#top) </div>
